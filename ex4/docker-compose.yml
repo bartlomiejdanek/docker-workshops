@@ -1,0 +1,9 @@
+---
+version: "3.7"
+services:
+  redis:
+    image: redis:5.0
+    ports:
+      - "6380:6379"
+    volumes:
+      - ./.redis_storage:/data
